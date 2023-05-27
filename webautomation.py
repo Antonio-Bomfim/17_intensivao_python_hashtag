@@ -15,3 +15,5 @@ cotacao = cotacao.replace(".", "").replace(",", ".")
 cotacao = float(cotacao)
 tabela.loc[0, "Preço Atual"] = cotacao
 print(tabela)
+
+#
