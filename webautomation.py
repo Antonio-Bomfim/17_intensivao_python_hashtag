@@ -4,10 +4,10 @@ from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 
-tabela = pd.read_excel("commodities.xlsx")
-
 servico = Service(GeckoDriverManager().install())
 navegador = webdriver.Firefox(service=servico)
+
+tabela = pd.read_excel("commodities.xlsx")
 
 navegador.get("https://www.melhorcambio.com/milho-hoje")
 cotacao = navegador.find_element("xpath", '//*[@id="comercial"]').get_attribute("value")
