@@ -16,4 +16,5 @@ cotacao = float(cotacao)
 tabela.loc[0, "Preço Atual"] = cotacao
 print(tabela)
 
-#
+
+## olha que funcionou!
